@@ -2,13 +2,13 @@
 echo "start install"
 yum update -y
 echo "install webserver"
-yum install httpd
+yum install -y httpd
 systemctl enable httpd
 systemctl start httpd
 echo "<!DOCTYPE html>
-      <html lang="en">
+      <html lang='en'>
       <head>
-          <meta charset="UTF-8">
+          <meta charset='UTF-8'>
           <title>Placepaca</title>
       </head>
       <style>
@@ -25,7 +25,7 @@ echo "<!DOCTYPE html>
           }
       </style>
       <body>
-          <img id="alpaca" src="https://images.placepaca.com/Alpaka_10.jpg" width="100"/>
+          <img id='alpaca' src='https://images.placepaca.com/Alpaka_10.jpg' width='100'/>
           <p>
               click to place alpaca
           </p>
