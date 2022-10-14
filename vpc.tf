@@ -57,7 +57,7 @@ resource "aws_security_group" "ssh_http_security" {
     protocol = "tcp"
     to_port = 80
   }
-  egregress {
+  egress {
     cidr_blocks = ["0.0.0.0/0"]
     from_port = 0
     ipv6_cidr_blocks = ["::/0"]
